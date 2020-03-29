@@ -1,0 +1,133 @@
+span {
+    font-family: 'Montserrat';
+    color: rgb(88, 88, 88);
+    font-weight: 500;
+}
+
+.question {
+    font-size: 18px;
+}
+
+.input-container {
+    min-height: 56px;
+    width: 240px;
+    border-radius: 14px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 0px #9fbeb5;
+}
+
+.input-container span {
+    font-weight: 600;
+}
+
+.span-container {
+    padding: 2px 24px;
+    min-height: 56px;
+    font-size: 18px;
+}
+
+.rectangle-bottom-border {
+    border-radius: 14px 14px 0px 0px;
+}
+
+.drop {
+    position: relative;     
+    height: calc(3*56px);
+    width: 100%;
+    border-radius: 0px 0px 14px 14px;
+    opacity: 1;
+    font-size: 18px;
+    
+    transition: height 0.3s, opacity 0.5s;
+    transition-timing-function: ease-in-out;
+
+    -webkit-box-shadow: inset 0px 20px 20px -24px rgba(159,190,181,0.6);
+    -moz-box-shadow: inset 0px 20px 20px -24px rgba(159,190,181,0.6);
+    box-shadow: inset 0px 20px 20px -24px rgba(159,190,181,0.6);
+
+    overflow-y: scroll;
+}
+
+.drop > ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    opacity: 1;
+    /* transition: opacity 0.5s;
+    transition-delay: 1s; */
+}
+
+.hidden {
+    opacity: 0;
+    height: 0px;
+}
+
+.hidden > ul {
+    opacity: 0;
+    height: 0px;
+    visibility: collapse;
+}
+
+.list-item {
+    height: 56px;
+    padding: 2px 24px;
+}
+
+.icon-container {
+    height: 20px;
+    width: 20px;
+}
+
+.line {
+    width: 14px;
+    height: 2px;
+    border-radius: 6px;
+    background-color: #859fa2;
+    margin: 0em;
+    position: relative;
+    transition: transform 0.6s;
+}
+
+.left {
+    transform: rotate(45deg);
+    left: 2px;
+}
+
+.left-rotate {
+    transform: rotate(-45deg);
+}
+
+.right {
+    transform: rotate(-45deg);
+    right: 2px;
+}
+
+.right-rotate {
+    transform: rotate(-135deg);
+}
+
+.point {
+    position: absolute;
+    left: 10px;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: rgb(88, 88, 88);
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(88, 88, 88); 
+}

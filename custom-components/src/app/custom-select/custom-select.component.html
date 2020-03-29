@@ -1,0 +1,20 @@
+<span class="question d-flex mb-2">What's your favorite programming language?</span>
+
+<div (click)="toggleSelect()" class="input-container">
+    <div class="span-container d-flex align-items-center">
+        <span class="mr-auto">{{selectedItem.value}}</span>
+        <div class="icon-container ml-auto d-flex align-items-center">
+            <div class="line left" [ngClass]="{'left-rotate': showDropdown}"></div>
+            <div class="line right" [ngClass]="{'right-rotate': showDropdown}"></div>
+        </div>
+    </div>
+    <div class="drop" [ngClass]="{'hidden': !showDropdown}">
+        <ul>
+            <li (click)="onSelectItem(item.id)" class="list-item d-flex align-items-center"
+                *ngFor="let item of items; let i = index">
+                <div *ngIf="item.selected" class="point"></div>
+                <span>{{item.value}}</span>
+            </li>
+        </ul>
+    </div>
+</div>
